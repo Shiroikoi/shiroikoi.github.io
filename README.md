@@ -1,1 +1,0 @@
-# shiroikoi.github.io
