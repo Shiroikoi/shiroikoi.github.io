@@ -133,20 +133,20 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg");
+  background-image: url("/images/bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   animation-name: bgFadeIn;
   animation-duration: 2s;
-  opacity: 1;
+  opacity: 0.6;
 }
 @-moz-keyframes bgFadeIn {
   from {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.6;
   }
 }
 @-webkit-keyframes bgFadeIn {
@@ -154,7 +154,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.6;
   }
 }
 @-o-keyframes bgFadeIn {
@@ -162,7 +162,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.6;
   }
 }
 @keyframes bgFadeIn {
@@ -170,7 +170,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.6;
   }
 }
 body {
@@ -1968,7 +1968,7 @@ pre[class*='language-']:hover .copy-btn {
     color: var(--hty-text-color);
   }
   :root:not([data-user-color-scheme]) body::before {
-    background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg");
+    background-image: url("/images/bg_dark.webp");
   }
   :root:not([data-user-color-scheme]) .char {
     background-color: rgba(0,0,0,0.5);
@@ -2044,7 +2044,7 @@ pre[class*='language-']:hover .copy-btn {
   color: var(--hty-text-color);
 }
 [data-user-color-scheme='dark'] body::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg");
+  background-image: url("/images/bg_dark.webp");
 }
 [data-user-color-scheme='dark'] .char {
   background-color: rgba(0,0,0,0.5);
@@ -2208,57 +2208,4 @@ pre[class*='language-']:hover .copy-btn {
 #decryptButton .icon {
   width: 1.5rem;
   height: 1.5rem;
-}
-#girls {
-  text-align: center;
-}
-.girls-number {
-  color: #fff;
-}
-.girl-items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-.girl-item {
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
-  width: 8rem;
-  margin: 1rem;
-}
-.girl-item .girl-info {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.girl-item .girl-avatar {
-  object-fit: cover;
-  object-position: center top;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  padding: 0.2rem;
-  background-color: #fff;
-  box-shadow: 0 0 1rem rgba(0,0,0,0.12);
-  transition: 0.5s;
-}
-.girl-item .girl-avatar:hover {
-  box-shadow: 0 0 2rem rgba(0,0,0,0.12);
-}
-.girl-item .girl-name {
-  font-size: 0.9rem;
-}
-.girl-item .girl-from {
-  font-size: 12px;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
-  font-weight: bold;
-  color: var(--hty-secondary-text-color);
-}
-.girl-item .girl-from::before {
-  content: '「';
-}
-.girl-item .girl-from::after {
-  content: '」';
 }
